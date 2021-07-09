@@ -1,2 +1,6 @@
 # HID_STM32-USB-wireless-keyboard
+
+Hi guys this is a brief introduction about this project here as you expect from the name of the repo I’m trying to make my stm32 microcontroller work as HID Keyboard device but not this every thing of course 
+As you know keyboard device is interrupt transaction this type of transaction is supported by almost USB versions from 1.0 to the latest one 3.2 keyboard report descriptor is different alit bit from mouse report descriptor because in keyboard we have an out endpoint this endpoint used to receive the update state of the LEDs of the keyboard here is this project I receive the key characters through two methods the first one is through Keypad and the second method is through Bluetooth module but of course the representation of keys in ascii is different from usb so in this project I made a tiny function used to convert the received buffer into usb before start to transfer these keys to the usb host but also not all keys are supported by this project so any unsupported keys will skipped but I promise in the next version this project will support full keyboard keys I hope this brief introduction help you to take a closer look for this project you can also see the recap video on YouTube through the provided link below 
+
 https://youtu.be/XrfbE0AQGdk
